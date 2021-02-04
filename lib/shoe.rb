@@ -8,16 +8,8 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
-    if !(BRANDS.include?(@brand))
-      BRANDS << @brand
-    end
+    BRANDS << brand
+    unique_brands = BRANDS.uniq!  #if their is a dupliacte brand, do not include in the array
   end
-
-  def cobble
-    self.condition = "new"
-    puts "Your shoe is as good as new!"
-  end
-
-
 
 end
