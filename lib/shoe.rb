@@ -7,6 +7,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    brands.each do |brand|
+      BRANDS << brand
+    end
   end
 
   def cobble
